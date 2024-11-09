@@ -1,5 +1,5 @@
 {
-    "name": "@scope_name/package_name",
+    "name": "@test/calculator",
     "version": "1.0.0",
     "exports": "./calc.ts"
 }
