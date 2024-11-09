@@ -1,0 +1,15 @@
+{
+    "name": "deno-container",
+    "build": {
+        "dockerfile": "dockerfile"
+    },
+    "postCreateCommand": "sh .devcontainer/postCreateCommand.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": []
+        }
+    },
+    "mounts": [
+        "source=${localEnv:HOME}/.aws,target=/home/node/.aws,type=bind"
+    ]
+}
