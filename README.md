@@ -24,12 +24,12 @@ deno test
 
 ## Handson
 
-### 環境変数のセット
+### 環境変数をセットする
 
-```sh
+```bash
 export PROFILE_NAME="artifacttest"
-export AWS_DOMAIN="cf-handson-domain" && echo $AWS_DOMAIN
-export REPOSITORY_NAME="cfhandson"
+export AWS_DOMAIN="deno-art" && echo $AWS_DOMAIN
+export REPOSITORY_NAME="deno-pack"
 
 export AWS_ACCOUNT_ID=`aws sts get-caller-identity --profile $PROFILE_NAME --query 'Account' --output text` && echo $AWS_ACCOUNT_ID
 export AWS_DEFAULT_REGION="ap-northeast-1" && echo $AWS_DEFAULT_REGION
@@ -42,17 +42,6 @@ export AWS_DEFAULT_REGION="ap-northeast-1" && echo $AWS_DEFAULT_REGION
 
 ```sh
 aws sso login --profile $PROFILE_NAME
-```
-
-### 環境変数をセットする
-
-```bash
-export PROFILE_NAME="artifacttest"
-export AWS_DOMAIN="deno-art" && echo $AWS_DOMAIN
-export REPOSITORY_NAME="deno-pack"
-
-export AWS_ACCOUNT_ID=`aws sts get-caller-identity --profile $PROFILE_NAME --query 'Account' --output text` && echo $AWS_ACCOUNT_ID
-export AWS_DEFAULT_REGION="ap-northeast-1" && echo $AWS_DEFAULT_REGION
 ```
 
 ### ドメインを作成する

@@ -1,5 +1,8 @@
 {
   "tasks": {
     "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@mycompany/package": "npm:deno-npm@1.0.0"
   }
 }
